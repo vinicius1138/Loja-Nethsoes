@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOJA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 590px;
+        }
+        .swiper-slide {
+            display: flex;
+            height: 590px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #666;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-light" style="background-color:rgb(90, 41, 136)">
+        <a class="navbar-brand" href="#">
+            <section class="wow flash">
+          <img src="./images/netshoes.jpg" width="170" height="55" alt="">
+          </section>
+        </a>
+        </nav>
+        
+        <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#" >
+            <h1 class="nome1">LANÇAMENTO 2020:</h1>
+        </a>
+        </nav>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/chuteira1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/chuteira2.jpg"></div>
+                <div class="swiper-slide"><img src="./images/chuteira3.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>    
+        </div>
+        <br>
+        <br>
+        
+        <nav class="navbar navbar-light" style="background-color:rgba(185, 152, 202, 0.815)" >
+            <section class="wow zoomInUp">
+            <a class="navbar-brand" href="#">
+                    <h1 class="nome">OFF-WHITE:</h1>
+            </a>
+            </section>
+            </nav>
+            
+        <div class="off">
+        <section class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+        <img width="370" height="370" id="img" data-zoom-image="./images/tênis.jpg" src="./images/tênis.jpg" alt="">
+        </section>
+        <section class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+        <img width="370" height="370" id="img2" data-zoom-image="./images/sneakers.jpg" src="./images/sneakers.jpg" alt="">
+        </section>
+        <section class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+        <img width="370" id="img3" data-zoom-image="./images/tênis1.jpg" src="./images/tênis1.jpg" alt="">
+        </section>
+        </div>
+
+        <nav class="navbar navbar-light" style="background-color:rgba(185, 152, 202, 0.815)">
+            <a class="navbar-brand" href="#">
+                    <h1 class="nome">PRODUTOS EM ALTA:</h1>
+            </a>
+            </nav>
+
+            <div class="galeria" >
+
+                <a href="images/mercurial.png" data-title="Chuteira Nike Mercurial Vapor 13 Pro Unissex" data-lightbox="photo1">
+                    <img src="images/mercurial.png" width="320" alt="">
+                </a>
+                <a href="images/vinigol.png" data-title="Chuteira Nike Tiempo Legend 8 Club Unissex" data-lightbox="photo1" >
+                    <img src="images/vinigol.png" width="320" alt="" >
+                </a>
+                <a href="images/venom.png" data-title="Chuteira Nike Phantom Venom Club Unissex" data-lightbox="photo1">
+                    <img src="images/venom.png" width="320"  alt="">
+                </a>
+                <a href="images/phantom.png" data-title="Chuteira Nike Phatom Vision Academy Unissex" data-lightbox="photo1">
+                        <img src="images/phantom.png" width="320" alt="">
+                </a>
+            </div>
+        
+        <script src="./js/wow.min.js"></script>
+        <script>
+            new WOW().init()
+        </script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination:{
+                    el: '.swiper-pagination',
+                    autoHeight: true
+                }
+            })
+        </script>
+        <script src="./js/jquery-1.8.3.min.js"></script>
+        <script src="./js/jquery.elevatezoom.js"></script>
+        <script>
+            $('#img').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        }); 
+        </script>
+        
+        <script>
+            $('#img2').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        }); 
+        </script>
+        <script>
+            $('#img3').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        }); 
+        </script>
+        <script src="js/lightbox-plus-jquery.min.js"></script> 
+        <script src="js/lightbox.min.js"></script> 
+
+</body>
+</html>
